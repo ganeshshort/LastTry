@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f7f1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="A few thoughts, and a friendly hello from Ganesh.">
+  <title>Okay, here goes…</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/hello.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./site.config.js" defer></script>
+  <script src="./form.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#your-choice">Skip to your choices</a>
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="thought-cloud" viewBox="0 0 260 155">
+      <path d="M32 113C9 113 3 88 18 73C4 54 20 34 43 36C44 13 73 6 91 21C105 2 136 5 146 22C166 7 193 16 198 34C223 25 247 42 241 62C266 71 260 100 241 108C241 131 210 142 193 130C179 148 148 148 135 134C115 151 88 144 80 131C57 143 32 136 32 113Z"/>
+    </symbol>
+  </defs></svg>
+
+  <main class="page">
+    <section class="thought-side" aria-labelledby="headline">
+      <h1 id="headline">Me, trying to say hi<span class="heading-dots">…</span></h1>
+      <div class="brain-scene">
+        <div class="thought crush">
+          <svg aria-hidden="true"><use href="#thought-cloud"/></svg>
+          <p>She’s pretty.<br>And her career is<br><em>really cool, too.</em></p>
+        </div>
+        <div class="thought doubt">
+          <svg aria-hidden="true"><use href="#thought-cloud"/></svg>
+          <p>What if she’s<br>just not<br>interested?</p>
+        </div>
+        <div class="thought boyfriend">
+          <svg aria-hidden="true"><use href="#thought-cloud"/></svg>
+          <p>Maybe she has<br>a boyfriend<span class="trailing">…</span></p>
+        </div>
+        <div class="thought one-percent">
+          <svg aria-hidden="true"><use href="#thought-cloud"/></svg>
+          <p><span class="percent">99%</span> sure this<br>goes nowhere.<br>But that <em>1%.</em></p>
+        </div>
+        <div class="thought rcb">
+          <svg aria-hidden="true"><use href="#thought-cloud"/></svg>
+          <p>My RCB 2024 brain:<br><strong>“There’s still<br>a chance, bro.”</strong></p>
+        </div>
+        <div class="thought marvel">
+          <svg aria-hidden="true"><use href="#thought-cloud"/></svg>
+          <p>My Marvel brain:<br>Dr. Strange said<br>we win in <em>one<br>timeline.</em> Maybe<br>this is that one.</p>
+        </div>
+
+        <img class="person" src="./assets/phone-guy-v2.png" width="1280" height="1280" alt="A pencil and watercolour sketch of a guy looking at his phone, smiling and overthinking what to say">
+        <span class="scene-caption">…and that’s how I ended up here.</span>
+      </div>
+      <p class="ps">P.S. Please don’t screenshot this and post it on LinkedIn.<br><span>I’m already overthinking enough 😅</span></p>
+    </section>
+
+    <section class="response-card" id="your-choice" aria-labelledby="choice-heading">
+      <h2 id="choice-heading">Hey, I’m Ganesh <span class="wave" aria-hidden="true">👋</span></h2>
+      <p class="intro">Your profile caught my eye, and I liked what you’re doing with your career. I’d like to have a friendly chat.</p>
+      <p class="intention">No date or relationship in mind.<br>Just a conversation, if you’d like one too.</p>
+      <span id="signature" hidden></span>
+      <form id="response-form">
+        <fieldset>
+          <legend>Your call:</legend>
+          <label class="choice"><input type="radio" name="choice" value="not_interested" required><span class="radio-mark"></span><span>Not interested, thanks</span></label>
+          <label class="choice"><input type="radio" name="choice" value="friendly_chat" required><span class="radio-mark"></span><span>Open to a friendly chat</span></label>
+        </fieldset>
+        <div class="instagram-field" id="instagram-field" hidden>
+          <label for="instagram">Your Instagram <span>(optional)</span></label>
+          <input id="instagram" name="instagram" type="text" maxlength="150" placeholder="@username or profile link" autocapitalize="none" autocomplete="off" spellcheck="false">
+        </div>
+        <button class="send-button" id="send-button" type="submit">Reply via Gmail <span aria-hidden="true">↗</span></button>
+        <a class="linkedin-button" id="linkedin-link" href="https://www.linkedin.com/in/ganesh-s-34874924b/" target="_blank" rel="noopener noreferrer">Message me on LinkedIn <span aria-hidden="true">↗</span></a>
+        <p class="privacy-note">Gmail opens a draft with your answer. On LinkedIn, just include your Instagram in your message.</p>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <div class="draft-fallback" id="thank-you" hidden><a id="open-gmail" target="_blank" rel="noopener noreferrer">Gmail didn’t open? Open your draft here.</a></div>
+      <p class="close-note">No pressure to reply, either.</p>
+    </section>
+  </main>
+  <noscript><p class="noscript">You can use the LinkedIn link to reply without JavaScript.</p></noscript>
+</body>
+</html>
+
